@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* reset */
+* { margin: 0; padding: 0; font-family: 'Noto Sans CJK KR', sans-serif; } 
+ul,li { margin: 0; padding: 0; list-style: none; } 
+a { text-decoration: none; } 
+#wrap { width: 100%; } 
+/* header */
+#wrap header { /* border:1px solid red; */
+ width: 98%; height: 80px; margin: 0 auto; background-color: #fff; display: flex;  justify-content: space-between; } 
+#wrap header .logo img { margin-top: 30px; } 
+#wrap header .logo img:hover { opacity: 0.7; } 
+#wrap header .menu ul { display: flex; justify-content: space-between; width: 600px; margin-top: 18px; } 
+#wrap header .menu ul li a { display: block; color: #000; font-size: 16px; font-weight: bold; padding: 10px 25px; } 
+#wrap header .menu ul li a:hover,
+#wrap header .menu ul li a:focus { padding: 10px 25px; background-color: #000; color: #fff; border-radius: 50px; } 
+/* contents */
+#wrap #contents1 { width: 100%; height: 1000px; background: url("../images/app1.jpg")no-repeat center/cover; background-attachment: fixed; min-width: 1000px; } 
+#wrap #contents2 { width: 100%; height: 1000px; background: url("../images/app2.jpg")no-repeat center/cover; background-attachment: fixed; min-width: 1000px; } 
+#wrap #contents3 { width: 100%; height: 1000px; background: url("../images/app3.jpg")no-repeat center/cover; background-attachment: fixed; min-width: 1000px; } 
+/* footer */
+#wrap footer { width: 100%; height: 80px; background-color: #fff;}
+#wrap footer p { margin-top: 40px; color: #000; text-align: center; font-size: 15px; } 
+/* quick menu */
+#wrap #quick { position: absolute; top: 90px; right: 10px; width: 120px; } 
+#wrap #quick a { display: block; text-align: center; color: #fff; width: 120px; height: 120px; font-weight: bold; font-size: 15px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); border-radius: 50%; line-height: 120px; } 
+#wrap #quick a:nth-child(1) { background: linear-gradient(180deg, #39F3FF 0%, #1051B2 100%); } 
+#wrap #quick a:nth-child(1):hover,
+#wrap #quick a:nth-child(1):focus { opacity: 0.8; } 
+#wrap #quick a:nth-child(2) { background: rgba(0, 0, 0, 0.5); } 
+#wrap #quick a:nth-child(2):hover,
+#wrap #quick a:nth-child(2):focus { opacity: 0.8; } 
+#wrap #quick a:nth-child(3) { background: rgba(0, 0, 0, 0.5); } 
+#wrap #quick a:nth-child(3):hover,
+#wrap #quick a:nth-child(3):focus { opacity: 0.8; } 
+
+/* font */
+@import url('https://cdn.jsdelivr.net/npm/noto-sans-cjk-kr@latest/css/NotoSansCJKkr.css');
+
